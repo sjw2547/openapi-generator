@@ -430,7 +430,6 @@ public class ApiClient extends JavaTimeFormatter {
         return contentTypes[0];
     }
 
-
     public void sendBody(HttpRequest<Buffer> request,
                          Handler<AsyncResult<HttpResponse<Buffer>>> responseHandler,
                          Object body) {
