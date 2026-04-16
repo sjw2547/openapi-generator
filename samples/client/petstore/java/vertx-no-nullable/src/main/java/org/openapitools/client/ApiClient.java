@@ -430,6 +430,7 @@ public class ApiClient extends JavaTimeFormatter {
         return contentTypes[0];
     }
 
+
     public void sendBody(HttpRequest<Buffer> request,
                          Handler<AsyncResult<HttpResponse<Buffer>>> responseHandler,
                          Object body) {
@@ -585,7 +586,6 @@ public class ApiClient extends JavaTimeFormatter {
                 }
             });
         };
-
         String dir = getDownloadsDir();
         if (dir != null && !dir.isEmpty()) {
             fs.mkdirs(dir, mkdirResult -> {
