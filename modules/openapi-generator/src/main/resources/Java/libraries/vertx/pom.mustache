@@ -144,8 +144,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.6.1</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>{{#useVertx5}}11{{/useVertx5}}{{^useVertx5}}1.8{{/useVertx5}}</source>
+                    <target>{{#useVertx5}}11{{/useVertx5}}{{^useVertx5}}1.8{{/useVertx5}}</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -231,7 +231,7 @@
         <!-- Vertx -->
         <dependency>
             <groupId>io.vertx</groupId>
-            <artifactId>{{#useRxJava3}}vertx-rx-java3{{/useRxJava3}}{{^useRxJava3}}vertx-rx-java{{/useRxJava3}}</artifactId>
+            <artifactId>{{#useRxJava3}}vertx-rx-java3{{/useRxJava3}}{{#useRxJava2}}vertx-rx-java2{{/useRxJava2}}{{^useRxJava3}}{{^useRxJava2}}vertx-rx-java{{/useRxJava2}}{{/useRxJava3}}</artifactId>
             <version>${vertx-version}</version>
         </dependency>
         <dependency>
