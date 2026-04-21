@@ -210,7 +210,7 @@
         <!-- Vertx -->
         <dependency>
             <groupId>io.vertx</groupId>
-            <artifactId>vertx-rx-java</artifactId>
+            <artifactId>vertx-rx-java3</artifactId>
             <version>${vertx-version}</version>
         </dependency>
         <dependency>
@@ -269,7 +269,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <vertx-version>3.5.2</vertx-version>
+        <vertx-version>5.0.11</vertx-version>
         <jackson-version>2.19.2</jackson-version>
         <jackson-databind>2.19.2</jackson-databind>
         <jackson-databind-nullable-version>0.2.10</jackson-databind-nullable-version>
